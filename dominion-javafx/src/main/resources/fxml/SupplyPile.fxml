@@ -1,0 +1,15 @@
+<?import javafx.scene.layout.TilePane?>
+<?import javafx.scene.control.Label?>
+<fx:root fx:id="SupplyPileView" type="javafx.scene.layout.VBox" id="SupplyPileView" xmlns="http://javafx.com/javafx/" xmlns:fx="http://javafx.com/fxml/" stylesheets="@../css/style.css" spacing="10">
+    <Label fx:id="treasure" text="Treasure Cards"></Label>
+    <TilePane fx:id="treasurePiles" id="treasurePiles" alignment="CENTER" hgap="10" vgap="10"></TilePane>
+
+    <Label fx:id="victory" text="Victory Cards"></Label>
+    <TilePane fx:id="victoryPiles" id="victoryPiles" alignment="CENTER" hgap="10" vgap="10"></TilePane>
+
+    <Label fx:id="kingdom" text="Kingdom Cards"></Label>
+    <TilePane fx:id="kingdomPiles" id="kingdomPiles" alignment="CENTER" prefColumns="5" hgap="15" vgap="15"></TilePane>
+
+    <Label fx:id="curse" text="Curse Cards"></Label>
+    <TilePane fx:id="cursePiles" id="cursePiles" alignment="CENTER" prefColumns="5" hgap="15" vgap="15"></TilePane>
+</fx:root>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Button?>
+
+<fx:root type="javafx.scene.layout.VBox" alignment="CENTER" spacing="40.0" xmlns="http://javafx.com/javafx/" xmlns:fx="http://javafx.com/fxml/" stylesheets="@../css/style.css" style="-fx-background-image: url('/images/bg.jpg'); -fx-background-size: cover;">
+    <Label text="Partie Terminée" styleClass="other-player-name" style="-fx-font-size: 50px; -fx-text-fill: white; -fx-effect: dropshadow(three-pass-box, black, 10, 0, 0, 5);"/>
+    <VBox fx:id="scoresBox" alignment="CENTER" spacing="20.0" styleClass="other-player-box" maxWidth="500.0" minHeight="200.0"/>
+    <Button fx:id="quitButton" text="Quitter le jeu" styleClass="bouton-skip"/>
+</fx:root>

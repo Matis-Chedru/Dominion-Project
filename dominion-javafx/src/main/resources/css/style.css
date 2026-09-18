@@ -1,0 +1,159 @@
+.label {
+    -fx-font-family: "Book Antiqua", "Palatino Linotype", "Georgia", serif;
+    -fx-text-fill: #3b2a1a;
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+}
+
+#gameView {
+    -fx-background-image: url("/images/bg.jpg");
+    -fx-background-size: cover;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-spacing: 20px;
+    -fx-padding: 20px;
+}
+
+.texte-standard {
+    -fx-font-size: 24px;
+    -fx-text-fill: #f5deb3;
+    -fx-effect: dropshadow(three-pass-box, black, 5, 0.7, 1, 1);
+    -fx-padding: 15px;
+}
+
+.bouton-skip {
+    -fx-font-family: "Book Antiqua", "Georgia", serif;
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #ffe4c4;
+    -fx-background-color: linear-gradient(#5c3a21, #2b180d);
+    -fx-padding: 10px 20px;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(three-pass-box, black, 5, 0, 0, 3);
+}
+
+.bouton-skip:hover {
+    -fx-background-color: linear-gradient(#7c4f2e, #3a2213);
+}
+
+.bouton-skip:pressed {
+    -fx-background-color: #2b180d;
+    -fx-effect: none;
+}
+
+#currentPlayerView {
+    -fx-background-image: url("/images/parchment.jpg");
+    -fx-alignment: center;
+    -fx-padding: 15px;
+    -fx-border-color: #5c3a21;
+    -fx-border-width: 3px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.6), 10, 0, 2, 2);
+    -fx-spacing: 10px;
+}
+
+#currentPlayerView #playerName {
+    -fx-font-size: 28px;
+    -fx-text-fill: #8b0000;
+    -fx-underline: true;
+}
+
+#currentPlayerView #labelPane {
+    -fx-alignment: center;
+    -fx-spacing: 15px;
+    -fx-padding: 5px;
+}
+
+#currentPlayerView #labelPane .label {
+    -fx-font-size: 16px;
+    -fx-text-fill: #3b2a1a;
+}
+
+#currentPlayerView #gamePane {
+    -fx-opacity: 65%;
+    -fx-alignment: center;
+    -fx-spacing: 5px;
+    -fx-padding: 10px;
+}
+
+#currentPlayerView #handPane {
+    -fx-alignment: center;
+    -fx-spacing: 5px;
+    -fx-padding: 10px;
+}
+
+#SupplyPileView {
+    -fx-background-image: url("/images/parchment.jpg");
+    -fx-alignment: center;
+    -fx-padding: 15px;
+    -fx-border-color: #5c3a21;
+    -fx-border-width: 3px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.6), 10, 0, 2, 2);
+    -fx-spacing: 10px;
+}
+
+.recNb{
+    -fx-fill: url("/images/number.jpg");
+}
+
+.nbStyle{
+    -fx-text-fill: #8b0000;
+}
+
+.other-player-box {
+    -fx-background-image: url("/images/parchment.jpg");
+    -fx-alignment: center;
+    -fx-padding: 10px;
+    -fx-border-color: #5c3a21;
+    -fx-border-width: 2px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.6), 5, 0, 1, 1);
+    -fx-spacing: 5px;
+}
+
+.other-player-native-island{
+    -fx-alignment: center;
+}
+
+.image-island-native{
+    -fx-background-size: cover;
+    -fx-border-color: #5c3a21;
+}
+
+.other-player-name {
+    -fx-font-size: 20px;
+    -fx-text-fill: #8b0000;
+    -fx-underline: true;
+    -fx-font-family: "Book Antiqua", "Georgia", serif;
+    -fx-font-weight: bold;
+}
+
+.bouton-action {
+    -fx-font-family: "Book Antiqua", "Georgia", serif;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #ffffff;
+    -fx-background-color: linear-gradient(#4a7c59, #2b4f34);
+    -fx-padding: 8px 15px;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(three-pass-box, black, 5, 0, 0, 2);
+}
+
+.bouton-action:hover {
+    -fx-background-color: linear-gradient(#5a946b, #386643);
+}
+
+.bouton-action:pressed {
+    -fx-background-color: #2b4f34;
+    -fx-effect: none;
+}
+
+.embargoStyle {
+    -fx-background-color: #d32f2f;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-background-radius: 15;
+    -fx-min-width: 25px;
+    -fx-min-height: 25px;
+    -fx-alignment: center;
+    -fx-effect: dropshadow(three-pass-box, black, 5, 0, 0, 2);
+}
