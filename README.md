@@ -48,48 +48,55 @@ Le code source a été restructuré pour maximiser la maintenabilité et l'exten
 
 ## 🏗 Architecture du Projet
 
-`Dominion-Project/`
-`├── .gitignore`
-`├── README.md`
-`├── docs/`
-`│   └── diagramme_classes_squelette.png # Modélisation logicielle UML`
-`├── dominion-backend/                   # Phase 1 : Moteur métier & Serveur WebSocket`
-`│   ├── src/`
-`│   └── pom.xml`
-`└── dominion-javafx/                    # Phase 2 : Interface riche client lourd`
-`    ├── captures/                       # Captures d'écran`
-`    │   ├── Interface_choix_joueurs.png`
-`    │   └── Interface_vue_joueur.png`
-`    ├── src/`
-`    └── pom.xml`
+```text
+Dominion-Project/
+├── .gitignore
+├── README.md
+├── docs/
+│   └── diagramme_classes_squelette.png # Modélisation logicielle UML
+├── dominion-backend/                   # Phase 1 : Moteur métier & Serveur WebSocket
+│   ├── src/
+│   └── pom.xml
+└── dominion-javafx/                    # Phase 2 : Interface riche client lourd
+    ├── captures/                       # Captures d'écran
+    │   ├── Interface_choix_joueurs.png
+    │   └── Interface_vue_joueur.png
+    ├── src/
+    └── pom.xml
+```
 
 ---
 
-## 🚀 Installation & Exécution
+## ⚙️ Installation et Exécution
 
 ### Prérequis
 * **JDK 21** ou supérieur.
-* **Maven**.
-* Git.
+* Un IDE Java (IntelliJ IDEA, Eclipse, VSCode) **OU** Maven installé globalement sur votre machine.
 
 ### 1. Cloner le dépôt
-`git clone https://github.com/Matis-Chedru/Dominion-Project.git`
-`cd Dominion-Project`
+```bash
+git clone [https://github.com/Matis-Chedru/Dominion-Project.git](https://github.com/Matis-Chedru/Dominion-Project.git)
+```
 
+### 2. Exécution via IDE (Recommandée)
+1. Ouvrez le dossier `dominion-backend` comme un projet Maven dans votre IDE.
+2. Laissez les dépendances se télécharger, puis exécutez la classe principale `fr.umontpellier.iut.dominion.AppDominion`.
+3. Ouvrez le dossier `dominion-javafx` dans une autre fenêtre de votre IDE et lancez la classe principale de l'interface.
 
-### 2. Démarrer le Moteur & Serveur WebSocket (Backend)
-Ouvrez un premier terminal pour compiler et lancer le serveur :
-`cd dominion-backend`
-`mvn clean compile exec:java -Dexec.mainClass="fr.umontpellier.iut.dominion.AppDominion"`
+### 3. Exécution via Terminal (Alternative)
+*Nécessite que la commande `mvn` soit reconnue dans votre variable d'environnement PATH.*
 
+**Démarrer le Backend :**
+```bash
+cd dominion-backend
+mvn clean compile exec:java -Dexec.mainClass="fr.umontpellier.iut.dominion.AppDominion"
+```
 
-### 3. Démarrer le Client Lourd JavaFX (Frontend)
-Ouvrez un second terminal pour compiler et lancer l'interface graphique :
-`cd ../dominion-javafx`
-`mvn clean compile javafx:run`
-
-
----
+**Démarrer le Frontend JavaFX :**
+```bash
+cd ../dominion-javafx
+mvn clean compile javafx:run
+```
 
 ## 👥 Auteurs & Contexte Académique
 
