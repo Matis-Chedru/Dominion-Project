@@ -98,9 +98,11 @@ cd ../dominion-javafx
 mvn clean compile javafx:run
 ```
 
+---
+
 ## 👥 Auteurs & Contexte Académique
 
 Projet universitaire réalisé en binôme dans le cadre du **BUT Informatique (parcours RACDV)** à l'**IUT de Montpellier**.
 
-* **Matis CHEDRU** : Modélisation du contrôleur de partie et du cycle de vie des tours (`cleanup`, `playTurn`, interaction avec le deck), refactoring structurel des mécaniques d'attaque (création de l'abstraction `AttackCard`), implémentation de cartes complexes (`Blockade`, `Corsair`, `GhostShip`, `Embargo`) et validation de la logique métier via l'écriture des tests unitaires (`CardsTestEtudiants`).
+* [**Matis CHEDRU**](https://github.com/Matis-Chedru) : Modélisation du contrôleur de partie et du cycle de vie des tours (`cleanup`, `playTurn`, interaction avec le deck), refactoring structurel des mécaniques d'attaque (création de l'abstraction `AttackCard`), implémentation de cartes complexes (`Blockade`, `Corsair`, `GhostShip`, `Embargo`) et validation de la logique métier via l'écriture des tests unitaires (`CardsTestEtudiants`)[cite: 1].
 * **Tiphaine GREZE** : Modélisation des actions complexes et des cartes à effet différé (*Duration*, *Reaction*), gestion de la pioche asynchrone et des malus adverses, implémentation d'une large majorité des cartes du set Seaside (`Tactician`, `PirateShip`, `Island`, `Native Village`, `Wharf`), et optimisation globale des méthodes métiers du joueur.
